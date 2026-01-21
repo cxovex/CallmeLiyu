@@ -116,3 +116,28 @@ header {
   padding-top: env(safe-area-inset-top);
   padding-bottom: env(safe-area-inset-bottom);
 }
+
+/* 헤더 고정 */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+/* 입력창 고정 */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+/* 본문 영역 스크롤 가능하게 */
+main {
+    margin-top: 60px; /* 헤더 높이만큼 */
+    margin-bottom: 50px; /* 입력창 높이만큼 */
+    overflow-y: auto;
+    height: calc(100vh - 110px); /* 헤더+입력창 제외 */
