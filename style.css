@@ -2,14 +2,23 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+body {
+  background: #cdefff;
+  display: flex;
+  justify-content: center;
+}
+
+/* 앱 전체 */
 .app {
   width: 100%;
   max-width: 420px;
+
+  /* 사파리 대응 핵심 */
+  height: 100svh;
   height: 100dvh;
-  background: #cdefff;
+
   display: flex;
   flex-direction: column;
 }
@@ -103,3 +112,7 @@ header {
   border-top: 1px solid #ddd;
 }
 
+.app {
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
