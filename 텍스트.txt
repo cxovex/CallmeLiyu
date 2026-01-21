@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS TEST</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>CSS 테스트</h1>
+  <p>이 문장이 파란색이면 성공</p>
+</body>
+</html>
