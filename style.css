@@ -1,12 +1,67 @@
-body {
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   background: #cdefff;
 }
 
-h1 {
-  color: red;
+header {
+  text-align: center;
+  padding: 14px;
+  font-weight: bold;
+  background: white;
+  border-bottom: 1px solid #ddd;
 }
 
-p {
-  color: blue;
-  font-size: 20px;
+.chat-area {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+}
+
+.message {
+  display: flex;
+  align-items: flex-start;
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.bubble {
+  background: white;
+  padding: 10px 14px;
+  border-radius: 16px;
+  max-width: 70%;
+}
+
+.choices {
+  padding: 10px;
+}
+
+.choices button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 20px;
+  border: none;
+  background: #bfe9ff;
+  font-size: 14px;
+}
+
+.input {
+  padding: 12px;
+  background: white;
+  border-top: 1px solid #ddd;
+  color: #aaa;
 }
