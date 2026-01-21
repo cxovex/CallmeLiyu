@@ -65,3 +65,24 @@ header {
   border-top: 1px solid #ddd;
   color: #aaa;
 }
+/* 텍스트 색 */
+header {
+  color: #222;
+}
+
+.bubble {
+  color: #333;
+  font-size: 15px;
+}
+
+/* 버튼 글자 색 */
+.choices button {
+  color: #0369a1;
+  font-weight: 600;
+}
+
+/* 입력창 글자 */
+.input {
+  color: #999;
+  font-size: 14px;
+}
